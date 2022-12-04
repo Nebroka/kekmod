@@ -1,4 +1,10 @@
 {
   "item.kekmod.raw_shitore": "Raw Shitore",
-  "item.kekmod.shitore": "Shitore"
+  "item.kekmod.shitore": "Shitore",
+
+  "block.kekmod.shitore_block": "Block of Shit 8)",
+  "block.kekmod.shitore_ore": "Shitore Ore",
+  "block.kekmod.deepslate_shitore_ore": "Deepslate Shitore Ore",
+
+  "itemGroup.kekmod.shitore": "Kekmod Shittab"
 }
