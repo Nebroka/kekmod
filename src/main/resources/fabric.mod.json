@@ -1,29 +1,32 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "kekmod",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Kek Mod",
+  "description": "richtige drecksmod zum lernen",
   "authors": [
-    "Me!"
+    "Nebroka"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
     "sources": "https://github.com/FabricMC/fabric-example-mod"
   },
 
-  "license": "CC0-1.0",
+  "license": "MIT License",
   "icon": "assets/modid/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "net.nebroka.kekmod.KekMod"
+    ],
+    "client": [
+      "net.nebroka.kekmod.KekModClient"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "kekmod.mixins.json"
   ],
 
   "depends": {
