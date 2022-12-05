@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 100,
+  "experience": 0.7,
+  "group": "shitore",
+  "ingredient": {
+    "item": "minecraft:raw_shitore"
+  },
+  "result": "minecraft:shitore"
+}

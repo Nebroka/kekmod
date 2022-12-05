@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "kekmod:shitore"
+    }
+  },
+  "result": {
+    "item": "kekmod:shitore_block"
+  }
+}

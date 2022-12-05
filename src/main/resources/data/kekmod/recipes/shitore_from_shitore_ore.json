@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "shitore",
+  "ingredient": {
+    "item": "minecraft:shitore_ore"
+  },
+  "result": "minecraft:shitore"
+}
