@@ -2,9 +2,9 @@
   "type": "minecraft:blasting",
   "cookingtime": 100,
   "experience": 0.7,
-  "group": "shitore",
+  "group": "kekmod:shitore",
   "ingredient": {
-    "item": "minecraft:deepslate_shitore_ore"
+    "item": "kekmod:deepslate_shitore_ore"
   },
-  "result": "minecraft:shitore"
+  "result": "kekmod:shitore"
 }

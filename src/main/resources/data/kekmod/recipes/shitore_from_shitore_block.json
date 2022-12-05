@@ -1,13 +1,13 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "group": "shitore",
+  "group": "kekmod:shitore",
   "ingredients": [
     {
-      "item": "minecraft:shitore_block"
+      "item": "kekmod:shitore_block"
     }
   ],
   "result": {
     "count": 9,
-    "item": "minecraft:shitore"
+    "item": "kekmod:shitore"
   }
 }
