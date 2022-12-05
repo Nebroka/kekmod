@@ -5,6 +5,7 @@ import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.nebroka.kekmod.KekMod;
+import net.nebroka.kekmod.item.custom.KysLolItem;
 
 
 public class ModItems {
@@ -14,6 +15,9 @@ public class ModItems {
 
     public static final Item SHITORE = registerItem("shitore",
             new Item(new FabricItemSettings().group(ModItemGroup.SHITORE)));
+
+    public static final Item KYS_LOL = registerItem("kys_lol",
+            new KysLolItem(new FabricItemSettings().group(ModItemGroup.SHITORE).maxCount(1)));
 
 
     private static Item registerItem(String name, Item item){
