@@ -12,6 +12,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.util.registry.Registry;
 import net.nebroka.kekmod.KekMod;
+import net.nebroka.kekmod.block.custom.ShitLampBlock;
 import net.nebroka.kekmod.block.custom.SpeedBlock;
 import net.nebroka.kekmod.item.ModItemGroup;
 
@@ -31,6 +32,13 @@ public class ModBlocks {
     public static final Block SPEED_BLOCK = registerBlock("speed_block",
             new SpeedBlock(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()), ModItemGroup.SHITORE);
 
+    public static final Block SHIT_LAMP_BLOCK = registerBlock("shit_lamp_block",
+            new ShitLampBlock(FabricBlockSettings.of(Material.GLASS).strength(3f)
+                    .luminance(state -> state.get(ShitLampBlock.LIT) ? 15 : 0)), ModItemGroup.SHITORE);
+
+
+
+
     private static Block registerBlock(String name, Block block, ItemGroup tab){
         registerBlockItem(name, block, tab);
         return Registry.register(Registry.BLOCK, new Identifier(KekMod.MOD_ID, name), block);
@@ -40,7 +48,6 @@ public class ModBlocks {
         return Registry.register(Registry.ITEM, new Identifier(KekMod.MOD_ID, name),
                 new BlockItem(block, new FabricItemSettings().group(tab)));
     }
-
 
     public static void registerModBlocks(){
         KekMod.LOGGER.debug("Registering ModBlocks for " + KekMod.MOD_ID);

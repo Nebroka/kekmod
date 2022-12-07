@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "kekmod:block/shit_lamp_block_on"
+  }
+}

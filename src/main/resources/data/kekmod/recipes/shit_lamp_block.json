@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:shaped_crafting",
+  "key": {
+    "A": {
+      "item": "minecraft:glass"
+    },
+    "B": {
+      "item": "minecraft:nether_star"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "result": {
+    "item": "kekmod:shit_lamp_block"
+  }
+}
