@@ -3,6 +3,7 @@ package net.nebroka.kekmod.block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.Material;
 import net.minecraft.block.OreBlock;
 import net.minecraft.item.BlockItem;
@@ -12,6 +13,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.util.registry.Registry;
 import net.nebroka.kekmod.KekMod;
+import net.nebroka.kekmod.block.custom.EggplantCropBlock;
 import net.nebroka.kekmod.block.custom.ShitLampBlock;
 import net.nebroka.kekmod.block.custom.SpeedBlock;
 import net.nebroka.kekmod.item.ModItemGroup;
@@ -36,8 +38,13 @@ public class ModBlocks {
             new ShitLampBlock(FabricBlockSettings.of(Material.GLASS).strength(3f)
                     .luminance(state -> state.get(ShitLampBlock.LIT) ? 15 : 0)), ModItemGroup.SHITORE);
 
+    public static final Block EGGPLANT_CROP = regtisterBlockWithoutItem("eggplant_crop",
+            new EggplantCropBlock(FabricBlockSettings.copy(Blocks.WHEAT)));
 
 
+    private static Block regtisterBlockWithoutItem(String name, Block block){
+        return Registry.register(Registry.BLOCK, new Identifier(KekMod.MOD_ID, name), block);
+    }
 
     private static Block registerBlock(String name, Block block, ItemGroup tab){
         registerBlockItem(name, block, tab);

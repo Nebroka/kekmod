@@ -2,12 +2,16 @@
   "item.kekmod.raw_shitore": "Raw Shitore",
   "item.kekmod.shitore": "Shitore",
   "item.kekmod.kys_lol": "Russian Roulette",
+  "item.kekmod.eggplant": "Eggplant ( ͡° ͜ʖ ͡°)",
+  "item.kekmod.eggplant_seeds": "Eggplant Seeds",
+
 
   "block.kekmod.shitore_block": "Block of Shit 8)",
   "block.kekmod.shitore_ore": "Shitore Ore",
   "block.kekmod.deepslate_shitore_ore": "Deepslate Shitore Ore",
   "block.kekmod.speed_block": "funny block make player go weee",
   "block.kekmod.shit_lamp_block": "dickhead poop lamp",
+  "block.kekmod.eggplant_crop": "Eggplant Crop",
 
   "itemGroup.kekmod.shitore": "Kekmod Shittab"
 }
