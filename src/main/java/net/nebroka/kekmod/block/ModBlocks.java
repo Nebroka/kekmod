@@ -12,6 +12,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.util.registry.Registry;
 import net.nebroka.kekmod.KekMod;
+import net.nebroka.kekmod.block.custom.SpeedBlock;
 import net.nebroka.kekmod.item.ModItemGroup;
 
 public class ModBlocks {
@@ -27,7 +28,8 @@ public class ModBlocks {
             new OreBlock(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool(),
                     UniformIntProvider.create(3, 7)), ModItemGroup.SHITORE);
 
-
+    public static final Block SPEED_BLOCK = registerBlock("speed_block",
+            new SpeedBlock(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()), ModItemGroup.SHITORE);
 
     private static Block registerBlock(String name, Block block, ItemGroup tab){
         registerBlockItem(name, block, tab);
